@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name ="search-module" parallel="tests">
+    <test name="search-test-java">
+        <parameter name ="keyword" value="java"/>
+        <classes>
+            <class name="com.searchModule.tests.searchTests"></class>
+        </classes>
+    </test>
+    <test name="search-test-qa">
+        <parameter name ="keyword" value="qa"/>
+        <classes>
+            <class name="com.searchModule.tests.searchTests"></class>
+        </classes>
+    </test>
+</suite>
